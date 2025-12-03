@@ -1,0 +1,60 @@
+
+body{
+    margin: auto;
+    max-width: 900px;
+    padding: 15px;
+    background-color: beige;
+}
+
+h1{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+}
+
+*{
+    box-sizing: border-box; /* changes the hitbox when it comes to border in the picture and texts*/
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item:hover{ /*Hover animation for a hover in the navigation*/
+    background-color: rgb(41, 145, 32);
+    font-size: 20px;
+}
+
+.flex-item{ /*Navigation's elements*/
+    background-color: #71d151;
+    color: rgb(12, 58, 12);
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    transition-property: font-size; /*hover animation*/
+    transition-duration: 0.5s;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+#cart{
+    height: 20px;
+    width: 20px;
+}
+
+img{
+    width: 870px;
+}
+
+/* On screens that are 600 px wide or less, make the columns stack on top of each other instead of next to each other*/
+@media (max-width:700px){
+    .flex-container {
+        flex-direction: column;
+    }
+}
