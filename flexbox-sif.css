@@ -3,12 +3,17 @@ body{
     margin: auto;
     max-width: 900px;
     padding: 15px;
-    background-color: rgb(195, 185, 140);
+    background-color: rgb(238, 228, 183);
 }
 
 h1{
     font-family: 'Lucida Sans';
     font-size: 30px;
+}
+
+h2{
+    font-family: 'fantasy';
+    font-size: 50px;
 }
 
 *{
